@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abinash_webpage</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 15px 30px;
+        font-size: 17px;
+        padding: 8px;
+      }
+      .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .heading {
+        text-align: center;
+      }
+      button {
+        background-color: rgb(74, 163, 74);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+        color: whitesmoke;
+        font-size: larger;
+      }
+      button:hover {
+        background-color: green;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">User Registration</h1>
+      <hr />
+      <form method="POST">
+        <div>
+          <label><h3>Username :</h3></label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username:"
+            required
+          /><br />
+        </div>
+        <div>
+          <label><h3>Password:</h3></label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+            required
+          /><br />
+        </div>
+        <br />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
